@@ -1,5 +1,11 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
+# local env
+.env
+
+# config
+/src/util/config.js
+
 # dependencies
 /node_modules
 

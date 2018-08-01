@@ -9,3 +9,7 @@ This app demos:
 * [] Kinesis records errors
 * [] AWS ElasticSearch is fed Kinesis stream
 * [] React static app displays indexed data
+
+# Setup
+
+* Set AWS credentials in `src/util/config.js` (copy the example config)

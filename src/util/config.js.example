@@ -1,0 +1,10 @@
+export default {
+
+  // Example AWS configuration for Kinesis:
+  "aws": {
+    "identityPoolId": "IDENTITY_POOL_ID",
+    "region": "REGION",
+    "apiVersion": "2015-08-04",
+    "deliveryStreamName": "DELIVERY_STREAM_NAME"
+  }
+}
