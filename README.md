@@ -3,12 +3,12 @@
 This app demos:
 
 * [] User inputs data to react static app
-* [] User data is sent live to AWS Kinesis
+* [x] User data is sent live to AWS Kinesis
 * [] Kinesis (&/or Lambda) transforms the data
-* [] Kinesis backs up source data
-* [] Kinesis records errors
-* [] AWS ElasticSearch is fed Kinesis stream
-* [] React static app displays indexed data
+* [x] Kinesis backs up source data
+* [x] Kinesis records errors
+* [x] AWS ElasticSearch is fed Kinesis stream
+* [x] React static app displays indexed data
 
 # Setup
 

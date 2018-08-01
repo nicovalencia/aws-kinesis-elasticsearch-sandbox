@@ -17,6 +17,15 @@ class ES {
       });
   }
 
+  static search(size, query) {
+    return client.search({
+        size,
+      }).then(resp => resp.hits)
+      .catch(err => {
+        console.error('ES Error:', err);
+      });
+  }
+
 }
 
 export default ES;

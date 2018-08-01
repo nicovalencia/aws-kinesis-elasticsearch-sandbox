@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ES from './util/ES';
+import Search from './components/Search';
 
 class App extends React.Component {
 
@@ -21,6 +22,7 @@ class App extends React.Component {
       <div>
         <h1>AWS Kinesis + Elasticsearch Sandbox</h1>
         <p>ES Records: {this.state.esRecordCount}</p>
+        <Search />
       </div>
     );
   }
