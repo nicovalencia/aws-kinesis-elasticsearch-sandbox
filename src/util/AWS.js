@@ -5,10 +5,10 @@ import config from './config';
 // Setup:
 
 AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-  IdentityPoolId: config.aws.identityPoolId,
+  IdentityPoolId: config.aws.kinesis.identityPoolId,
 });
 
-AWS.config.region = config.aws.region;
+AWS.config.region = config.aws.kinesis.region;
 
 // Service getters:
 // todo: separate module
@@ -32,7 +32,7 @@ export const getFirehose = async function() {
       }
 
       firehose = new AWS.Firehose({
-        apiVersion: config.aws.apiVersion,
+        apiVersion: config.aws.kinesis.apiVersion,
       });
 
       resolve(firehose);
@@ -51,7 +51,7 @@ export class Firehose {
     getFirehose().then(firehose => {
 
       firehose.putRecord({
-        DeliveryStreamName: config.aws.deliveryStreamName,
+        DeliveryStreamName: config.aws.kinesis.deliveryStreamName,
         Record: {
           Data: JSON.stringify(data),
         }
